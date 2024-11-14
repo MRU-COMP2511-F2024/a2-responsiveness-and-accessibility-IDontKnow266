@@ -195,3 +195,107 @@ footer p {
     font-size: 1.2rem;
     color: #770000;
 }
+
+@media (max-width: 589px) { /*It is important to note that media is used to help the compiler know whether its mobile or PC*/
+                            /*This is for small screens*/
+nav ul {
+
+flex-direction: column;
+text-align: center; 
+
+}
+
+header {
+
+grid-template-columns: 1fr;
+text-align: center;
+
+}
+
+section {
+
+display: block;
+
+}
+
+.horizontal-section {
+
+flex-direction: column;
+
+}
+
+.extra {
+
+width: 100%;
+text-align: center;
+
+}
+}
+
+@media (min-width: 590px) and (max-width: 790px) { /*This is for medium screens*/
+
+section {
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+.horizontal-section {
+
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+header {
+
+grid-template-columns: 1fr 2fr;
+
+}
+
+}
+
+@media (min-width: 791px) {
+
+header {
+
+grid-template-columns: 1fr 3fr;
+
+}
+
+section {
+
+gap: 25px;
+grid-template-columns: 3fr 1fr;
+
+}
+
+.horizontal-section {
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+
+.section_main {
+
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 25px;
+
+}
+
+table {
+
+width: 100%;
+
+}
+
+.title_footer {
+
+margin-top: 40px;
+
+}
+}
