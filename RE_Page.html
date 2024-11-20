@@ -83,16 +83,16 @@
         </section>
 
         <h2><a href="https://www.residentevil.com/re4/en-asia/" target="_blank">Go to Resident Evil 4 Website</a></h2>
-        
+
         <hr>
 
         <section class="horizontal-section">
             <div class="fun_fact">
-            <figure>
-                <img src="images/RE4-Pic-3.png" alt="Resident Evil 4" title="Leon S Kennedy Main Character" height="300"
-                    width="300">
-                <figcaption>Resident Evil 4 Leon S, Kennedy</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/RE4-Pic-3.png" alt="Resident Evil 4" title="Leon S Kennedy Main Character"
+                        height="300" width="300">
+                    <figcaption>Resident Evil 4 Leon S, Kennedy</figcaption>
+                </figure>
                 <h2>Fun Fact #1</h2>
                 <p>In Resident Evil 4, the game shifts away from the traditional T-virus zombie storyline and instead
                     introduces a new parasite called Las Plagas. Unlike the virus-based infections seen in previous
@@ -105,11 +105,11 @@
             </div>
 
             <div class="fun_fact">
-            <figure>
-                <img src="images/RE4-Pic-4.png" alt="Resident Evil 4" title="Resident Evil Red Umbrella" height="300"
-                    width="300">
-                <figcaption>Umbrella Corp. logo, Umbrella Corps Resident Evil</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/RE4-Pic-4.png" alt="Resident Evil 4" title="Resident Evil Red Umbrella"
+                        height="300" width="300">
+                    <figcaption>Umbrella Corp. logo, Umbrella Corps Resident Evil</figcaption>
+                </figure>
 
                 <h2>Fun Fact #2</h2>
                 <p>The Umbrella Corporation, with its iconic red and white umbrella logo, is one of the most
@@ -130,43 +130,44 @@
     <h1 id="Contact_form">Contact Form</h1>
     <section class="footer-title">
     </section>
+    <fieldset>
+        <footer>
+            <form class="form" action="mailto:hulla714@mtroyal.ca" method="get">
+                <label for="salutation-mr">Salutation:</label><br>
+                <input type="radio" id="salutation-mr" name="salutation" value="Mr"> Mr
 
-    <footer>
-        <form class="form" action="mailto:hulla714@mtroyal.ca" method="get">
-            <label for="salutation-mr">Salutation:</label><br>
-            <input type="radio" id="salutation-mr" name="salutation" value="Mr"> Mr
+                <label for="salutation-ms"></label><br>
+                <input type="radio" id="salutation-ms" name="salutation" value="Ms"> Ms<Br>
 
-            <label for="salutation-ms"></label><br>
-            <input type="radio" id="salutation-ms" name="salutation" value="Ms"> Ms<Br>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" required><br><br>
 
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" required> <br><br>
 
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" required> <br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="000-000-0000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br><br>
 
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required><br><br>
+                <p> We Would Love To Hear! Which one do you like better?</p>
+                <input type="checkbox" id="option1" name="option1">
+                <label for="option1">Resident Evil</label><br>
 
-            <p> We Would Love To Hear! Which one do you like better?</p>
-            <input type="checkbox" id="option1" name="option1">
-            <label for="option1">Resident Evil</label><br>
+                <input type="checkbox" id="option2" name="option2">
+                <label for="option2">God Of War</label><br><br>
 
-            <input type="checkbox" id="option2" name="option2">
-            <label for="option2">God Of War</label><br><br>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit now" />
+    </fieldset>
+    </form>
 
-            <input type="reset" value="Reset" />
-            <input type="submit" value="Submit now" />
-        </form>
-
-        <p>&copy; 2024 RE4 & GOW. All rights are reserved.</p>
+    <p>&copy; 2024 RE4 & GOW. All rights are reserved.</p>
     </footer>
 
 </body>

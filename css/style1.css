@@ -5,7 +5,7 @@
 }
 
 p {
-    color: #434343; /*Color of Paragraph elements*/
+    color:#797979; /*Color of Paragraph elements*/
 }
 
 html {
@@ -62,13 +62,13 @@ h1, h3 {
     grid-column: 1 / 4;
     text-align: center;
     margin-top: -80px;
-    color: #434343;
+    color:#797979;
     font-size: 70px;
 }
 
 h2 {
 
-    color:#434343;
+    color:#797979;
 
 }
 
@@ -81,7 +81,7 @@ hr {
 
 figcaption {
     font-family: Impact,'Arial Narrow Bold';
-    color:#4d4d4d
+    color:#797979;
 }
 
 h3 {
@@ -142,7 +142,7 @@ tr:nth-child(odd) {
 }
 
 a:visited {
-    color:#606060;
+    color:#797979;
 }
 
 a:hover {
@@ -186,14 +186,18 @@ form {
     margin-top: -38px;
 }
 
+fieldset {
+    border: none;
+}
+
 .form {
-    color:#4d4d4d;
+    color:#797979;
 }
 
 footer p {
     margin-top: 30px;
     font-size: 1.2rem;
-    color: #770000;
+    color: #a80000;
 }
 
 @media (max-width: 589px) { /*It is important to note that media is used to help the compiler know whether its mobile or PC*/

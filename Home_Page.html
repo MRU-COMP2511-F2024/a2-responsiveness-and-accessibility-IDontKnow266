@@ -3,7 +3,8 @@
 
 <head> <!--Heading of the Web Page-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--This is added to help make the website look good on 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is added to help make the website look good on 
                                                                             different screen sizes, helps with automatically adjusting the scale-->
     <title>Resident Evil & God of War Home Page</title> <!--Title of the Webpage-->
     <link rel="stylesheet" href="css/style3.css" type="text/css"> <!--Linking the CSS stylesheet-->
@@ -13,11 +14,13 @@
 
     <header> <!--The first Header-->
         <figure style="float: right;">
-        <img src="images/Company_Logo.png" alt="Company Logo" width="200" height="200"> <!--Adding Logo, adjusting where on webpage to show and the size of it-->
+            <img src="images/Company_Logo.png" alt="Company Logo" width="200" height="200">
+            <!--Adding Logo, adjusting where on webpage to show and the size of it-->
         </figure>
         <nav> <!--This is to add the navigation menu on the top right-->
             <ul class="sticky"> <!--Helps the positioning of the navigation bar, CSS has a part of it-->
-                <li><a href="#Contact_form">Contact Form</a></li> <!--These are all the buttons for the Nav bar, each goes to thier respective location-->
+                <li><a href="#Contact_form">Contact Form</a></li>
+                <!--These are all the buttons for the Nav bar, each goes to thier respective location-->
                 <li><a href="#God_of_War">God of War</a></li>
                 <li><a href="#Resident_Evil">Resident Evil</a></li>
                 <li><a href="RE_Page.html">Resident Evil Page</a></li>
@@ -42,7 +45,7 @@
         </figure>
     </section>
 
-    <hr> 
+    <hr>
 
     <section>
 
@@ -57,44 +60,51 @@
     <hr>
 
     <section class="footer-title"> <!--Start of Footer Area-->
-    <h1 id="Contact_form">Contact Form</h1> <!--NOTE - Class is used for helping with CSS, makes it easier to apply CSS styles-->
+        <h1 id="Contact_form">Contact Form</h1>
+        <!--NOTE - Class is used for helping with CSS, makes it easier to apply CSS styles-->
     </section>
+    <fieldset>
+        <footer>
+            <form class="form" action="mailto:hulla714@mtroyal.ca" method="get">
+                <!--This is setup to send emails, using mailto, adding the class is key to assigning a name to class-->
+                <label for="salutation-mr">Salutation:</label><br>
+                <!--Creating a label for the form, the ID for the label is 'salutation-mr', allows users to know that they should select or input their salutation-->
+                <input type="radio" id="salutation-mr" name="salutation" value="Mr"> Mr
+                <!--This is declaring the radio button for the Mr input-->
 
-    <footer>
-        <form class="form" action="mailto:hulla714@mtroyal.ca" method="get"> <!--This is setup to send emails, using mailto, adding the class is key to assigning a name to class-->
-            <label for="salutation-mr">Salutation:</label><br> <!--Creating a label for the form, the ID for the label is 'salutation-mr', allows users to know that they should select or input their salutation-->
-            <input type="radio" id="salutation-mr" name="salutation" value="Mr"> Mr <!--This is declaring the radio button for the Mr input-->
+                <label for="salutation-ms"></label><br> <!--Creating label once again-->
+                <input type="radio" id="salutation-ms" name="salutation" value="Ms"> Ms<Br>
+                <!--This is declaring the radio button for the Ms input-->
 
-            <label for="salutation-ms"></label><br> <!--Creating label once again-->
-            <input type="radio" id="salutation-ms" name="salutation" value="Ms"> Ms<Br> <!--This is declaring the radio button for the Ms input-->
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="firstname" required><br><br>
 
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="firstname" required><br><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lastname" required> <br><br>
 
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lastname" required> <br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="000-000-0000"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
 
-            <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required><br><br>
 
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required><br><br>
+                <p> We Would Love To Hear! Which one do you like better?</p>
+                <input type="checkbox" id="option1" name="option1">
+                <label for="option1">Resident Evil</label><br>
 
-            <p> We Would Love To Hear! Which one do you like better?</p>
-            <input type="checkbox" id="option1" name="option1">
-            <label for="option1">Resident Evil</label><br>
+                <input type="checkbox" id="option2" name="option2">
+                <label for="option2">God Of War</label><br><br>
 
-            <input type="checkbox" id="option2" name="option2">
-            <label for="option2">God Of War</label><br><br>
+                <input type="reset" value="Reset" />
+                <input type="submit" value="Submit now" />
+    </fieldset>
+    </form>
 
-            <input type="reset" value="Reset" />
-            <input type="submit" value="Submit now" />
-        </form>
-
-        <p>&copy; 2024 RE4 & GOW. All rights are reserved.</p>
+    <p>&copy; 2024 RE4 & GOW. All rights are reserved.</p>
     </footer>
 
 </body>

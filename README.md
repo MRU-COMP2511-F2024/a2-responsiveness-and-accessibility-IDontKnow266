@@ -119,3 +119,15 @@ Zeshan - God of War Series - 2005 - Present
 - We used smooth scrolling to help the scrolling appear less jittery. There are also highlighted links that have a hover element.
 
 ![Table](/images/Common%20Fate%20-%201%20-%20COMP%202511.png)
+
+**document the category of issues that you identified through the manual and automated analysis above**
+
+**What kinds of changes did you have to make (I do not want a list here). Generalize the types of issues that you created when building your website, and then the general type of changes that you made to resolve those issues.**
+
+- In the Automated Analysis I got Contrast Errors and I made the colors a little brighter to fix those errors.
+
+- I also got a Fieldset alert and I added the correct fieldset tags to the forms.
+
+**How do these accessibility changes connect with the Gestalt principles we discussed earlier this semester?**
+
+- Improving the contrast helps the users of the websites focus on important elements, which supports figure and similarity. When I used fieldset to group together elements this follows proximity and makes content easier to follow.
